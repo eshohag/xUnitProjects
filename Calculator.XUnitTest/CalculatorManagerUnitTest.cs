@@ -5,21 +5,28 @@ using Xunit.Abstractions;
 
 namespace Calculator.XUnitTest
 {
-    public class CalculatorManagerUnitTest
+    public class CalculatorManagerUnitTest:IDisposable
     {
-        private readonly ITestOutputHelper _helper;
+        private readonly ITestOutputHelper _outputLog;
         CalculatorManager manager = null;
+        CalculatorInfo info = null;
 
         public CalculatorManagerUnitTest(ITestOutputHelper helper)
         {
-            _helper = helper;
+            _outputLog = helper;
             manager = new CalculatorManager();
+            info = new CalculatorInfo()
+            {
+                Model = "",
+                Year = "2020",
+                ManufacturingBrand = "SISCO"
+            };
         }
         [Fact]
         [Trait("Calculator", "Manager")]
         public void Is_Correct_Data_Type_Checking_for_GetCalculatorInfo()
         {
-            _helper.WriteLine("Is_Correct_Data_Type_Checking_for_GetCalculatorInfo");
+            _outputLog.WriteLine("Is_Correct_Data_Type_Checking_for_GetCalculatorInfo");
             var info = new CalculatorInfo()
             {
                 Model = "C101",
@@ -31,14 +38,7 @@ namespace Calculator.XUnitTest
 
         [Fact]
         public void Null_Field_Checking_for_GetCalculatorInfo()
-        {
-            var info = new CalculatorInfo()
-            {
-                Model = "",
-                Year = "2020",
-                ManufacturingBrand = "SISCO"
-            };
-            var manager = new CalculatorManager();
+        {            
             Assert.Throws<ArgumentNullException>(() => manager.GetCalculatorInfo(info));
             Assert.Throws<ArgumentNullException>("calculatorInfo", () => manager.GetCalculatorInfo(info));
         }
@@ -46,14 +46,13 @@ namespace Calculator.XUnitTest
         [Fact(Skip = "Right now doesn't need to tested!")]
         public void Fact_Skip_for_GetCalculatorInfo()
         {
-            var info = new CalculatorInfo()
-            {
-                Model = "",
-                Year = "2020",
-                ManufacturingBrand = "SISCO"
-            };
             Assert.Throws<ArgumentNullException>(() => manager.GetCalculatorInfo(info));
             Assert.Throws<ArgumentNullException>("calculatorInfo", () => manager.GetCalculatorInfo(info));
+        }
+
+        public void Dispose()
+        {
+            _outputLog.WriteLine("Methods are dispose!");
         }
     }
 }
