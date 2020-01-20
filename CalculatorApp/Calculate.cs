@@ -10,5 +10,9 @@ namespace CalculatorApp
         {
             return aNumber + bNumber;
         }
+        public double Division(double aNumber, double bNumber)
+        {
+            return aNumber / bNumber;
+        }
     }
 }

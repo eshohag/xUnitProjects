@@ -7,18 +7,15 @@ namespace Calculator.XUnitTest
 {
     public class CalculatorFixture : IDisposable
     {
-        private readonly ITestOutputHelper _outputLog;
-
-        public Calculate Calculator { get; private set; }
-        public CalculatorFixture(ITestOutputHelper outputLog)
+        public Calculate CalculatorFixt { get; private set; }
+        public CalculatorFixture()
         {
-            _outputLog = outputLog;
-            Calculator = new Calculate();
+            CalculatorFixt = new Calculate();
         }
 
         public void Dispose()
         {
-            _outputLog.WriteLine("Methods are dispose!");
+            //CleanUp
         }
     }
 }
