@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorApp", "Calculator
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator.XUnitTest", "Calculator.XUnitTest\Calculator.XUnitTest.csproj", "{BAB62DD6-46A8-477A-9CCF-173BA64B2653}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditCardApp", "CreditCardApp\CreditCardApp.csproj", "{2B598270-FE58-4698-859F-E22E6151EAF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditCard.MoqXUnitTest", "CreditCard.MoqXUnitTest\CreditCard.MoqXUnitTest.csproj", "{81F2D8DD-8BB1-4707-903F-918A5CEFEBE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{BAB62DD6-46A8-477A-9CCF-173BA64B2653}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAB62DD6-46A8-477A-9CCF-173BA64B2653}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAB62DD6-46A8-477A-9CCF-173BA64B2653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B598270-FE58-4698-859F-E22E6151EAF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B598270-FE58-4698-859F-E22E6151EAF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B598270-FE58-4698-859F-E22E6151EAF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B598270-FE58-4698-859F-E22E6151EAF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81F2D8DD-8BB1-4707-903F-918A5CEFEBE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F2D8DD-8BB1-4707-903F-918A5CEFEBE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F2D8DD-8BB1-4707-903F-918A5CEFEBE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F2D8DD-8BB1-4707-903F-918A5CEFEBE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
