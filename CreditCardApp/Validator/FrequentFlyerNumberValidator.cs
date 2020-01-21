@@ -1,5 +1,4 @@
 ﻿using CreditCardApp.Interface;
-using System;
 
 namespace CreditCardApp.Validator
 {
@@ -7,12 +6,27 @@ namespace CreditCardApp.Validator
     {
         public bool IsValid(string frequentFlyerNumber)
         {
-            throw new NotImplementedException("For demo purposes");
+            if (frequentFlyerNumber == null)
+                return false; ;
+            return true;
         }
 
         public void IsValid(string frequentFlyerNumber, out bool isValid)
         {
-            throw new NotImplementedException("For demo purposes");
+            if (frequentFlyerNumber == null)
+            {
+                isValid = false;
+            }
+            else
+                isValid = true;
+        }
+
+        public string LicenceKey
+        {
+            get
+            {
+                return "EXPIRED";
+            }
         }
     }
 }

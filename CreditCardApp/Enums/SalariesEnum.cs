@@ -2,7 +2,7 @@
 {
     public enum SalariesEnum
     {
-        HighIncomeThreshhold = 100000,
+        HighIncomeThreshhold = 50000,
         LowIncomeThreshhold = 20000
     }
 }
