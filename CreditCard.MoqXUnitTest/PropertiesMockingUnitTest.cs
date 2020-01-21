@@ -20,7 +20,7 @@ namespace CreditCard.MoqXUnitTest
         }
 
         [Fact]
-        public void ReferInvalidFrequentFlyerNumberApplicant()
+        public void LicenceExpiredApplicant()
         {
             var application = new Applicant() { Age=19 };
 
