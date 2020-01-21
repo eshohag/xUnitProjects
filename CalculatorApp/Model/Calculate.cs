@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CalculatorApp
+namespace CalculatorApp.Model
 {
-   public class Calculate
+    public class Calculate
     {
         public static double Sum(double aNumber, double bNumber)
         {

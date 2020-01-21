@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Calculator.XUnitTest.Fixtures;
 using Xunit;
 using Xunit.Abstractions;
 
 namespace Calculator.XUnitTest
 {
     [Collection("Calculator")]
-    public class Class2UnitTest
+    public class Class1FixtureCollectionUnitTest
     {
         private readonly ITestOutputHelper _outputLog;
         private readonly CalculatorFixture _calculator;
-        public Class2UnitTest(ITestOutputHelper outputLog,
+        public Class1FixtureCollectionUnitTest(ITestOutputHelper outputLog,
             CalculatorFixture calculator)
         {
             _outputLog = outputLog;

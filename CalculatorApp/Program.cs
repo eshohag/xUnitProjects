@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CalculatorApp.Model;
+using System;
 
 namespace CalculatorApp
 {

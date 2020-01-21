@@ -1,4 +1,5 @@
 using CalculatorApp;
+using CalculatorApp.Model;
 using System;
 using Xunit;
 using Xunit.Abstractions;

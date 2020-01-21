@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using CalculatorApp.Model;
+using System;
 
-namespace CalculatorApp
+namespace CalculatorApp.Manager
 {
     public class CalculatorManager
     {

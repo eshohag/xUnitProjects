@@ -1,9 +1,7 @@
-﻿using CalculatorApp;
+﻿using CalculatorApp.Model;
 using System;
-using System.Collections.Generic;
-using Xunit.Abstractions;
 
-namespace Calculator.XUnitTest
+namespace Calculator.XUnitTest.Fixtures
 {
     public class CalculatorFixture : IDisposable
     {

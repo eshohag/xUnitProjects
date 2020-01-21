@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CalculatorApp
+namespace CalculatorApp.Model
 {
     public class CalculatorInfo
     {

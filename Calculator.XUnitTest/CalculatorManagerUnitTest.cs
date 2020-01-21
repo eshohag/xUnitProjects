@@ -1,11 +1,13 @@
 ﻿using CalculatorApp;
+using CalculatorApp.Manager;
+using CalculatorApp.Model;
 using System;
 using Xunit;
 using Xunit.Abstractions;
 
 namespace Calculator.XUnitTest
 {
-    public class CalculatorManagerUnitTest:IDisposable
+    public class CalculatorManagerUnitTest : IDisposable
     {
         private readonly ITestOutputHelper _outputLog;
         CalculatorManager manager = null;
@@ -38,7 +40,7 @@ namespace Calculator.XUnitTest
 
         [Fact]
         public void Null_Field_Checking_for_GetCalculatorInfo()
-        {            
+        {
             Assert.Throws<ArgumentNullException>(() => manager.GetCalculatorInfo(info));
             Assert.Throws<ArgumentNullException>("calculatorInfo", () => manager.GetCalculatorInfo(info));
         }
