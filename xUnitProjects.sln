@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorApp", "CalculatorApp\CalculatorApp.csproj", "{6E7015D2-2C77-4D72-B285-0C4B1D0675A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorApp", "CalculatorApp\CalculatorApp.csproj", "{6E7015D2-2C77-4D72-B285-0C4B1D0675A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.XUnitTest", "Calculator.XUnitTest\Calculator.XUnitTest.csproj", "{BAB62DD6-46A8-477A-9CCF-173BA64B2653}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator.XUnitTest", "Calculator.XUnitTest\Calculator.XUnitTest.csproj", "{BAB62DD6-46A8-477A-9CCF-173BA64B2653}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
