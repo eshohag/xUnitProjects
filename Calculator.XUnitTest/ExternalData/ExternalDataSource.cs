@@ -14,7 +14,8 @@ namespace Calculator.XUnitTest.ExternalData
         {
             get
             {
-                string[] csvLines = File.ReadAllLines(@"E:\Dev_Shohag\Practice\xUnitProjects\Calculator.XUnitTest\ExternalData\TestData.csv");
+                //string[] csvLines = File.ReadAllLines(@"E:\Dev_Shohag\Practice\xUnitProjects\Calculator.XUnitTest\ExternalData\TestData.csv");
+                string[] csvLines = File.ReadAllLines("ExternalData/TestData.csv");
 
                 var testCases = new List<object[]>();
 

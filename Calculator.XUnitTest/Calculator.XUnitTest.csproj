@@ -17,4 +17,13 @@
     <ProjectReference Include="..\CalculatorApp\CalculatorApp.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="CustomData\CustomTestData.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ExternalData\TestData.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
