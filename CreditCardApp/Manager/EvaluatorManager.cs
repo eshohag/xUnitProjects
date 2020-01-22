@@ -69,6 +69,7 @@ namespace CreditCardApp.Manager
 
             return DecisionEnum.ReferredToHuman;
         }
+
         public DecisionEnum EvaluateProperties(Applicant application)
         {
             if (application.GrossAnnualIncome >= (int)SalariesEnum.HighIncomeThreshhold)
