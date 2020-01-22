@@ -21,19 +21,19 @@ namespace CreditCard.MoqXUnitTest
         [Fact]
         public void IsValidLicenseForApplicant()
         {
-            string licenseKey = "S103";
+            string licenseKey = "DHAKA-KHA-101";
 
             bool isValid = _serviceInformationManager.IsValidLicenseKey(licenseKey);
 
             Assert.True(isValid);
         }
 
-        public List<string> GetLicense()
+        public IList<string> GetLicense()
         {
             return new List<string>() {
-                "S101",
-                "S102",
-                "S103"
+                "DHAKA-KHA-101",
+                "DHAKA-KHA-102",
+                "DHAKA-KHA-103"
             };
         }
     }
