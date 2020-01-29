@@ -7,6 +7,7 @@ namespace AspNetMvc.UnitTest
 {
     public class StudentManagerUnitTest
     {
+
         [Fact]
         public void ValidStudent()
         {

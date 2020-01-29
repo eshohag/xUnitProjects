@@ -3,9 +3,6 @@ using CreditCardApp.Interface;
 using CreditCardApp.Manager;
 using CreditCardApp.Model;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
 namespace CreditCard.MoqXUnitTest

@@ -1,4 +1,5 @@
-﻿using CreditCardApp.Interface;
+﻿using CreditCardApp.Enums;
+using CreditCardApp.Interface;
 
 namespace CreditCardApp.Validator
 {
@@ -28,5 +29,7 @@ namespace CreditCardApp.Validator
                 return "EXPIRED";
             }
         }
+
+        public ValidationModeEnum ValidationMode { get; set; }
     }
 }

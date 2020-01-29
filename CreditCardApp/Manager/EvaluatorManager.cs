@@ -99,5 +99,39 @@ namespace CreditCardApp.Manager
 
             return DecisionEnum.ReferredToHuman;
         }
+
+        public DecisionEnum EvaluateChangeMoqProperties(Applicant application)
+        {
+            if (application.GrossAnnualIncome >= (int)SalariesEnum.HighIncomeThreshhold)
+            {
+                return DecisionEnum.AutoAccepted;
+            }
+            if (_validator.LicenceKey == "EXPIRED")
+            {
+                return DecisionEnum.AutoDeclined;
+            }
+
+            _validator.ValidationMode = application.Age >= 30 ? ValidationModeEnum.Detailed : ValidationModeEnum.Quick;
+          
+            _validator.IsValid(application.FrequentFlyerNumber, out bool isValidFrequentFlyerNumber);
+
+            if (!isValidFrequentFlyerNumber)
+            {
+                return DecisionEnum.ReferredToHuman;
+            }
+
+            if (application.Age <= (int)AgeEnum.AutoReferralMaxAge)
+            {
+                return DecisionEnum.ReferredToHuman;
+            }
+
+            if (application.GrossAnnualIncome < (int)SalariesEnum.LowIncomeThreshhold)
+            {
+                return DecisionEnum.AutoDeclined;
+            }
+
+            return DecisionEnum.ReferredToHuman;
+        }
+
     }
 }
